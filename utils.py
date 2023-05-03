@@ -2,12 +2,12 @@ import numpy as np
 import pandas as pd
 import regex as re
 import joblib
-import en_core_web_md
+import en_core_web_sm
 
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.svm import LinearSVC
 
-nlp = en_core_web_md.load()
+nlp = en_core_web_sm.load()
 classifier = LinearSVC()
 
 def clean_text(text):
